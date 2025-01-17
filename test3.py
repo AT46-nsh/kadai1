@@ -1,16 +1,13 @@
+import random
 import matplotlib.pyplot as plt
 
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 1, 3, 5]
+x = [random.random() for _ in range(50)]
+y = [random.random() for _ in range(50)]
 
-plt.scatter(x, y, color='blue', label='Data Points')
-
-plt.xlabel('X軸 (X-axis)')
-plt.ylabel('Y軸 (Y-axis)')
-
-plt.title('散布図 (Scatter Plot)')
-
-plt.legend()
-
+plt.scatter(x, y, color='blue')
+plt.title("Scatter Plot")
+plt.xlabel("X")
+plt.ylabel("Y")
 plt.grid(True)
+
 plt.show()
